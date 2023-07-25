@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessed Assurance Creations - Search Results</title>
+    <link rel="shortcut icon"
+ href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="Logo" width="30" height="30">
+        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button type="submit" onclick="search()">Search</button>
+        </div>
+    </div>
+
+    <h1>Search Results</h1>
+    <div id="search-results-container">
+        <!-- Search results will be dynamically inserted here -->
+    </div>
+
+    <footer>© 2023, Blessed Assurance Creations</footer>
+
+    <script src="script.js">
+        // Get the search query parameter from the URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var searchQuery = urlParams.get('query');
+
+        // Perform search and display results
+        displaySearchResults(searchQuery);
+
+        function displaySearchResults(query) {
+            // You can implement the search logic here based on the query
+            // and generate HTML elements dynamically to display the search results
+            // For simplicity, let's display a simple message
+
+            var searchResultsContainer = document.getElementById("search-results-container");
+
+            if (query) {
+                var message = document.createElement("p");
+                message.textContent = "Search results for: " + query;
+                searchResultsContainer.appendChild(message);
+            } else {
+                var noQueryMessage = document.createElement("p");
+                noQueryMessage.textContent = "No search query provided.";
+                searchResultsContainer.appendChild(noQueryMessage);
+            }
+        }
+    </script>
+</body>
+</html>

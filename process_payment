@@ -1,0 +1,27 @@
+from flask import Flask, request, render_template
+
+app = Flask(__name__)
+
+
+@app.route('/process_payment', methods=['POST'])
+def process_payment():
+    cardholder_name = request.form.get('cardholder_name')
+    card_number = request.form.get('card_number')
+    expiration_date = request.form.get('expiration_date')
+    cvv = request.form.get('cvv')
+
+    # Process the payment here
+    # You can add your payment processing logic in this function
+
+    # Example: Print the payment details
+    print("Cardholder Name:", cardholder_name)
+    print("Card Number:", card_number)
+    print("Expiration Date:", expiration_date)
+    print("CVV:", cvv)
+
+    # Return a response to the user
+    return "Payment processed successfully!"
+
+
+if __name__ == '__main__':
+    app.run()
