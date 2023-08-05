@@ -35,9 +35,12 @@ html, body {
 --tyrian-purple: #581D36ff;
 --smoky-black: #0B0305ff;
 */
+
 .navbar {
     background-color: #5E274Bff;
     overflow: hidden;
+    padding: 0; /* Add this to reset any default padding applied to the navbar */
+    margin: 0; /* Add this to reset any default margin applied to the navbar */
 }
 
 .logo {
@@ -120,6 +123,7 @@ h2 {
     text-align: center;
     margin-top: 20px;
 }
+
 h3 {
     margin-top: 40px;
     margin-left: 20px;
@@ -128,6 +132,8 @@ h3 {
 
 p {
     padding: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     color: black;
 }
 
