@@ -83,22 +83,14 @@ html, body {
 .text-loop {
     position: absolute;
     white-space: nowrap;
+    text-align: center;
     width: 100%;
 }
 
 .text-loop span {
     display: flex;
-    animation: textLoop 12s linear infinite;
     font-size: 1.2rem;
-}
-
-@keyframes textLoop {
-0% {
-    transform: translateX(-100%);
-}
-100% {
-    transform: translateX(100%);
-}
+    text-align: center;
 }
 
 
