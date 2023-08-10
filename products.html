@@ -9,45 +9,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="carousel.css" rel="stylesheet">
     <style>
-        .navbar, .navbar-brand {
-            cursor: default;
-        }
-        .nav-item:hover {
-            text-decoration: underline wavy;
-            color: hotpink;
-            font-family: "Poppins", cursive;
-        }
-        .dropdown-item {
-            font-family: 'Poppins', sans-serif;
-            text-decoration: none;
-        }
-        .text-loop {
-            background-color: hotpink;
-            color: white;
-            text-align: center;
-            padding: 5px;
-            overflow: hidden;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            flex-direction: column;
-            background-image: url('/images/background.jpg'); /* Replace 'clouds.jpg' with the path to your cloud image */
-            animation: animateClouds 60s infinite alternate;
-        }
-        p, h5, .btn:hover {
-            font-family: 'Poppins', cursive;
-        }
+      .navbar, .navbar-brand {
+          cursor: default;
+      }
+      .nav-item:hover {
+          text-decoration: underline wavy;
+          color: hotpink;
+          font-family: 'Berkshire Swash';
+      }
+      .dropdown-item {
+          font-family: 'Berkshire Swash';
+          text-decoration: none;
+      }
+      .text-loop {
+          background-color: hotpink;
+          color: white;
+          text-align: center;
+          padding: 5px;
+          overflow: hidden;
+      }
+      body {
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          flex-direction: column;
+          background-image: url('/images/background.jpg'); /* Replace 'clouds.jpg' with the path to your cloud image */
+          animation: animateClouds 60s infinite alternate;
+      }
+      p, .btn:hover {
+          font-family: 'Berkshire Swash';
+      }
 
-        @keyframes animateClouds {
-            0% {
-                background-position: 0 0; /* Start from initial position */
-            }
-            100% {
-                background-position: 100% 0; /* Move to the right by 100% */
-            }
-        }
-    </style>
+      @keyframes animateClouds {
+          0% {
+              background-position: 0 0; /* Start from initial position */
+          }
+          100% {
+              background-position: 100% 0; /* Move to the right by 100% */
+          }
+      }
+      .social-icon-link {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .social-icon-link:hover {
+        color: hotpink; /* Change to your desired hover color */
+    }
+  </style>
 </head>
 <body>
     <div class="wrapper">

@@ -9,45 +9,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        .navbar, .navbar-brand {
-            cursor: default;
-        }
-        .nav-item:hover {
-            text-decoration: underline wavy;
-            color: hotpink;
-            font-family: "Poppins", cursive;
-        }
-        .dropdown-item {
-            font-family: 'Poppins', sans-serif;
-            text-decoration: none;
-        }
-        .text-loop {
-            background-color: hotpink;
-            color: white;
-            text-align: center;
-            padding: 5px;
-            overflow: hidden;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            flex-direction: column;
-            background-image: url('/images/background.jpg'); /* Replace 'clouds.jpg' with the path to your cloud image */
-            animation: animateClouds 60s infinite alternate;
-        }
-        p, .btn:hover {
-            font-family: 'Poppins', cursive;
-        }
+      .navbar, .navbar-brand {
+          cursor: default;
+      }
+      .nav-item:hover {
+          text-decoration: underline wavy;
+          color: hotpink;
+          font-family: 'Berkshire Swash';
+      }
+      .dropdown-item {
+          font-family: 'Berkshire Swash';
+          text-decoration: none;
+      }
+      .text-loop {
+          background-color: hotpink;
+          color: white;
+          text-align: center;
+          padding: 5px;
+          overflow: hidden;
+      }
+      body {
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          flex-direction: column;
+          background-image: url('/images/background.jpg'); /* Replace 'clouds.jpg' with the path to your cloud image */
+          animation: animateClouds 60s infinite alternate;
+      }
+      p, .btn:hover {
+          font-family: 'Berkshire Swash';
+      }
 
-        @keyframes animateClouds {
-            0% {
-                background-position: 0 0; /* Start from initial position */
-            }
-            100% {
-                background-position: 100% 0; /* Move to the right by 100% */
-            }
-        }
-    </style>
+      @keyframes animateClouds {
+          0% {
+              background-position: 0 0; /* Start from initial position */
+          }
+          100% {
+              background-position: 100% 0; /* Move to the right by 100% */
+          }
+      }
+      .social-icon-link {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .social-icon-link:hover {
+        color: hotpink; /* Change to your desired hover color */
+    }
+  </style>
 </head>
 <body>
     <div class="wrapper">
@@ -95,7 +105,7 @@
 
         <!-- Main Content -->
         <div class="container col-xxl-8 px-4 py-5">
-            <h1 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">Contact Blessed Assurance Creations</h1>
+            <h1 class="display-7 fw-bold text-body-emphasis lh-1 mb-4">Contact Blessed Assurance Creations</h1>
             <br>
             <p style="font-size: 25px">We would love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. Our dedicated customer service team is here to assist you and provide any information you may need. Feel free to contact us through the methods below:</p>
             <br>
@@ -111,9 +121,48 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="text-white" style="text-align: center; background-color: purple">© 2023, Gifts 2 Unwind</footer>
 
+    <!-- Footer -->
+    <footer class="text-white" style="text-align: center; background-color: purple">
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-4">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-2 pt-3">
+                <input type="email" id="form5Example21" class="form-control" placeholder="Email Address"/>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto pt-3">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-2">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+      <div class="text-center p-3">
+        © 2023, Gifts 2 Unwind
+      </div>
+    </footer>
 
     <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
