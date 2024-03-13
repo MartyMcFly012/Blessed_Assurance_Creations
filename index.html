@@ -12,53 +12,111 @@
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
-        .navbar, .navbar-brand {
-            cursor: default;
-        }
-        .nav-item:hover {
-            text-decoration: underline wavy;
-            color: hotpink;
-            font-family: 'Berkshire Swash';
-        }
-        .dropdown-item {
-            font-family: 'Berkshire Swash';
-            text-decoration: none;
-        }
-        .text-loop {
-            background-color: hotpink;
-            color: white;
-            text-align: center;
-            padding: 5px;
-            overflow: hidden;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            flex-direction: column;
-            background-image: url('/images/background.jpg'); /* Replace 'clouds.jpg' with the path to your cloud image */
-            animation: animateClouds 60s infinite alternate;
-        }
-        p, .btn:hover {
-            font-family: 'Berkshire Swash';
-        }
+      .navbar, .navbar-brand {
+        cursor: default;
+      }
+      .nav-item:hover {
+        text-decoration: underline wavy;
+        color: hotpink;
+        font-family: 'Berkshire Swash';
+      }
+      .dropdown-item {
+        font-family: 'Berkshire Swash';
+        text-decoration: none;
+      }
+      .text-loop {
+        background-color: hotpink;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        overflow: hidden;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-image: url('/images/background.jpg'); /* Replace 'clouds.jpg' with the path to your cloud image */
+        animation: animateClouds 60s infinite alternate;
+      }
+      p, .btn:hover {
+        font-family: 'Berkshire Swash';
+      }
 
-        @keyframes animateClouds {
-            0% {
-                background-position: 0 0; /* Start from initial position */
-            }
-            100% {
-                background-position: 100% 0; /* Move to the right by 100% */
-            }
+      @keyframes animateClouds {
+        0% {
+          background-position: 0 0; /* Start from initial position */
         }
-        .social-icon-link {
-          color: #fff;
-          font-size: 24px;
-          margin: 0 10px;
-          text-decoration: none;
+        100% {
+          background-position: 100% 0; /* Move to the right by 100% */
+        }
+      }
+      .social-icon-link {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
       }
   
       .social-icon-link:hover {
-          color: hotpink; /* Change to your desired hover color */
+        color: hotpink; /* Change to your desired hover color */
+      }
+
+      .main {
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 3;
+      }
+
+      .rows{
+        height: 100vh;
+      }
+    
+      .form-control {
+        display: block;
+        width: 100%;
+        min-height: calc(1.5em + .75rem + 2px);
+        padding: .575rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 52px;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+    
+      .card{
+        padding: 20px;
+        background-color: white;
+        padding-bottom: 50px;
+        padding-top: 50px;
+      
+      }
+     
+      .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: black;
+        outline: 0;
+        box-shadow: none;
+      }
+        
+      .border-rad{
+        border-top-right-radius: 28px;
+        border-bottom-right-radius: 28px;
+      
+        color: #fff;
+        background-color: gold;
+        border-color: gold;
+      }
+        
+      .border-rad:hover{
+        background-color: gold;
+        border-color: gold;
       }
     </style>
 </head>
@@ -130,7 +188,8 @@
     </div>
 
     <div class="b-example-divider"></div>
-
+    
+    <!-- Products -->
     <section>
       <div class="container py-5">
         <div class="row">
@@ -246,11 +305,12 @@
       </div>
     </section>
 
-    <!-- <div class="container main col-xl-10 col-xxl-8 px-4 py-5">
+    <!-- Sign-up form -->
+    <!-- <div class="container main col-xl-10 col-xxl-8 px-4 py-8 mb-5">
       <div class="row align-items-center g-lg-5 py-5">
         <div class="col-lg-7 text-center text-lg-start">
           <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Sign-up form</h1>
-          <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+          <p class="col-lg-10 fs-4" style="font-family: 'Poppins', sans-serif;">Get notified when items are back in stock and access to exclusive deals!</p>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
           <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
@@ -275,13 +335,68 @@
       </div>
     </div> -->
 
+    <!-- Newsletter form -->
+    <div class="row d-flex justify-content-center align-items-center rows">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="text-center">
+            <img src="images/newsletter2.png" width="200">
+            <span class="d-block mt-3">Subscribe to our newsletter to stay up to date with our new arrivals <br> promotions and discounts</span>
+            <div class="mx-5">
+              <form class="input-group mb-3 mt-4" name="submit-to-google-sheet">
+                <input type="email" name="Email" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                <button class="btn border-rad" type="submit" id="button-addon2">Subscribe</button>
+              </form>
+              <span class="text-success" style="display: block;" id="msg"></span>
+            </div>            
+          </div>             
+        </div>          
+      </div>     
+    </div>
+
     <!-- Footer -->
     <footer class="text-white" style="text-align: center; background-color: purple">© 2023, Gifts 2 Unwind</footer>
-
 
     <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyF3VlCixtgMWX_VfpM02qYR1tBkT7nvpAjrUIBqjjGcTB7nbKqwoCOzpIXGMGHzmzE_w/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  const submittedEmails = new Set(); // Store submitted emails
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const emailInput = form.elements['Email']; // Get the email input field
+    const email = emailInput.value.trim().toLowerCase();
+
+    if (submittedEmails.has(email)) {
+      msg.innerHTML = "This email has already been subscribed.";
+      setTimeout(function(){
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+      return;
+    }
+
+    submittedEmails.add(email); // Add the email to the set
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Thank you for subscribing!";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+
+    
 </body>
 </html>
